@@ -12,7 +12,7 @@ namespace HelloASPDotNET.Controllers
         [HttpGet]        
         public IActionResult Index()
         {
-            string html = "<form method='post' action='/helloworld/welcome'>" +
+            string html = "<form method='post' action='/welcome'>" +
                "<input type='text' name='name'/>" +
                "<label for= 'Langs'> Choose a Language:</label>" +
                    "<select name = 'value' id = 'Langs'>  " +
@@ -29,7 +29,7 @@ namespace HelloASPDotNET.Controllers
         }
 
         // GET: /<controller>/welcome
-        [HttpPost("welcome")]
+        [HttpPost("/welcome")]
         //[HttpGet("/welcome/{name?}")]
         //[HttpGet("/welcome/{name,value?}")]
 
